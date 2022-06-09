@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filtroArray',
+  name: 'filtroArrayPuro',
+  pure: true
 })
 export class FiltroArrayPipe implements PipeTransform {
 
@@ -15,8 +16,6 @@ export class FiltroArrayPipe implements PipeTransform {
     return value.filter(
       (v: string) => v.toLocaleLowerCase().indexOf(filter) != -1
     );
-
-    return null;
   }
 
 }

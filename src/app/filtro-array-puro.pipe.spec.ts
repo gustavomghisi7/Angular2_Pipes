@@ -1,4 +1,4 @@
-import { FiltroArrayPipe } from './filtro-array.pipe';
+import { FiltroArrayPipe } from './filtro-array-puro.pipe';
 
 describe('FiltroArrayPipe', () => {
   it('create an instance', () => {

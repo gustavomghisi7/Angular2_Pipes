@@ -10,7 +10,7 @@ export class CamelCasePipe implements PipeTransform {
     let result = '';
 
     for (let v of values) {
-      result += this.capitalize(v);
+      result += this.capitalize(v) + ' ';
     }
 
     return result;
